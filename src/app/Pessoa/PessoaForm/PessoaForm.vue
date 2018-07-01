@@ -107,3 +107,8 @@
     },
   };
 </script>
+
+<style lang="sass">
+  input
+    text-transform: uppercase !important
+</style>
