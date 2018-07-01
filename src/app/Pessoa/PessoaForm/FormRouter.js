@@ -10,18 +10,5 @@ export default [
       icon: 'account_circle',
       title: 'Cadastrar pessoa',
     },
-    children: [
-      {
-        name: 'Editar pessoa',
-        path: '/editar-pessoa/:id',
-        meta: {
-          sidebar: false,
-          routerBack: '/pessoa',
-          domain: 'Pessoa',
-          title: 'Editar pessoa',
-          icon: 'edit',
-        },
-      },
-    ],
   },
 ];

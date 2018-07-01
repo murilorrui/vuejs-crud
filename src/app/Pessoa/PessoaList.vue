@@ -16,15 +16,6 @@
              dark
              small
              color="primary"
-             @click="editItem(props.item.entityId)"
-             )
-             v-icon edit
-           v-btn.mx-0(
-             fab
-             flat
-             dark
-             small
-             color="primary"
              @click="deleteItem(props.item.id)"
              )
              v-icon delete
@@ -84,9 +75,6 @@
             this.pessoas = data;
           });
       },
-      editItem(id) {
-        this.$router.push(`/editar-pessoa/${id}`);
-      },
       deleteItem(id) {
         pessoaService.delete(id);
         this.getPessoas();
@@ -94,3 +82,8 @@
     },
   };
 </script>
+
+<style lang="sass">
+  td
+    text-transform: uppercase
+</style>

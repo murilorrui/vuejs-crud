@@ -6,8 +6,8 @@ export default class CrudService {
     this.baseUrl = baseUrl;
   }
 
-  get(params = { entityId: '' }) {
-    return http.get(`${this.baseUrl}?${qs.stringify(params)}`);
+  get(id) {
+    return http.get(`${this.baseUrl}/${id}`);
   }
 
   getList() {
@@ -16,10 +16,6 @@ export default class CrudService {
 
   save(item) {
     return http.post(`${this.baseUrl}`, item);
-  }
-
-  edit(item) {
-    return http.put(`${this.baseUrl}`, item);
   }
 
   delete(id) {

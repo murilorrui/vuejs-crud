@@ -34,10 +34,8 @@ export default {
   },
   methods: {
     save() {
-      console.log(this.payload);
       if (!this.validate.validate()) return;
-      const callback = this.id ?
-        this.service.edit(this.payload) : this.service.save(this.payload);
+      const callback = this.service.save(this.payload);
       callback
         .then(() => {
           EventBus.$emit('snackbar', { active: true, color: 'success', msg: 'Ação realizada com sucesso.' });

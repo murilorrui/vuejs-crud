@@ -97,7 +97,7 @@
     },
     methods: {
       getItem() {
-        pessoaService.get({ entityId: this.id }).then(({ data }) => {
+        pessoaService.get(this.id).then(({ data }) => {
           this.payload = data;
         });
       },
