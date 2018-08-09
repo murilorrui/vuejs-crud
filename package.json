@@ -1,7 +1,7 @@
 {
-  "name": "sabium-crud",
+  "name": "vuejs-crud",
   "version": "1.0.0",
-  "description": "teste sabium",
+  "description": "teste vuejs",
   "author": "Murilo Rui <murilo.rui@uds.com.br>",
   "private": true,
   "scripts": {
